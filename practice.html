@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <title>Student Registration Form</title>
+</head>
+<body>
+ <h1>Student Registration Form</h1>
+
+ <form action="submit.php" method="post">
+
+ <!-- 1. Text box -->
+ <label for="fullname">Full Name:</label>
+ <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+ <br><br>
+
+ <!-- 2. Email -->
+ <label for="email">Email:</label>
+ <input type="email" id="email" name="email" placeholder="you@example.com" required>
+ <br><br>
+
+ <!-- 3. Password -->
+ <label for="pass">Password:</label>
+ <input type="password" id="pass" name="pass" required>
+ <br><br>
+
+ <!-- 4. Age -->
+ <label for="age">Age:</label>
+ <input type="number" id="age" name="age" min="5" max="100">
+ <br><br>
+
+ <!-- 5. Date of Birth -->
+ <label for="dob">Date of Birth:</label>
+ <input type="date" id="dob" name="dob">
+ <br><br>
+
+ <!-- 6. Radio buttons -->
+ <p>Gender:</p>
+ <input type="radio" id="male" name="gender" value="male">
+ <label for="male">Male</label>
+ <input type="radio" id="female" name="gender" value="female">
+ <label for="female">Female</label>
+ <input type="radio" id="other" name="gender" value="other">
+ <label for="other">Other</label>
+ <br><br>
+
+ <!-- 7. Dropdown -->
+ <label for="city">City:</label>
+ <select id="city" name="city">
+ <option value="dhaka">Dhaka</option>
+ <option value="khulna">Khulna</option>
+ <option value="rajshahi">Rajshahi</option>
+ <option value="sylhet">Sylhet</option>
+ </select>
+ <br><br>
+
+ <!-- 8. Checkbox -->
+ Hobbies:
+ <input type="checkbox" id="reading" name="hobby" value="reading">
+ <label for="reading">Reading</label>
+ <input type="checkbox" id="cricket" name="hobby" value="cricket">
+ <label for="cricket">Cricket</label>
+ <input type="checkbox" id="music" name="hobby" value="music">
+ <label for="music">Music</label>
+ <br><br>
+
+ <!-- 9. Text Area -->
+ <label for="about">About Yourself:</label><br>
+ <textarea id="about" name="about" rows="4" cols="40"></textarea>
+ <br><br>
+
+ <!-- 10. Buttons -->
+ <input type="submit" value="Submit">
+ <input type="reset" value="Reset">
+
+ </form>
+</body>
+</html>
